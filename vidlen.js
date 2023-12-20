@@ -49,7 +49,7 @@ const callback = (mutationList, observer) => {
   for (const mutation of mutationList) {
     if (mutation.type === "childList") {
       console.log("Title has been changed to: "+document.title+" ... Correcting");
-      if(document.title.startsWith("_"))  {
+      if(!document.title.startsWith("_"))  {
         document.title = finalTitle;
         console.log("Corrected to: "+document.title);
       }
