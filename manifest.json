@@ -9,6 +9,11 @@
             "matches": ["*://*.youtube.com/watch*"],
             "js": ["vidlen.js"]
         }
-    ] 
+    ],
+    "browser_specific_settings": {
+        "gecko": {
+          "id": "Youtube-Video-Length-Fetcher@Parker-Parker.Github.io"
+        }
+    } 
     
 }
