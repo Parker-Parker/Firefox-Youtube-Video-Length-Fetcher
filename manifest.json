@@ -1,1 +1,16 @@
-test2
+{
+    "manifest_version": 2,
+    "name": "Video Length Extension",
+    "version": "1.0",
+
+    "Description": "Adds length of video to tab title to enable sorting",
+
+    "content_script": [
+        {
+            "matches": ["*://*youtube.com/watch*"],
+            "js": ["vidlen.js"]
+    
+        }
+    ] 
+    
+}
