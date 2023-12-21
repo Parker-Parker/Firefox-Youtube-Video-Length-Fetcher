@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Video Length Extension",
-    "version": "1.0",
+    "version": "1.1",
     "description": "Adds length of video to tab title to enable sorting",
     "content_scripts": [
         {

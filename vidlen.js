@@ -21,13 +21,13 @@ const pad = (number) => {
 const makeDurationString = (seconds) => {
     const secR = Math.round(seconds);
     secs = Math.floor(secR)%60;
-    mins = Math.floor(secR/60)%(60*60);
+    mins = Math.floor(secR/60)%(60);
     hrs  = Math.floor(secR/(60*60));
     len  =  (secR<60)       ? (secs+"").length   : 
             (secR<(60*60))  ? (mins+"").length+2 : 
                                (hrs+"").length+4 ;
     
-    return ("_"+len+" "+pad(hrs)+":"+pad(mins)+":"+pad(secs)+" ");
+    return ("_"+len+" "+hrs+":"+pad(mins)+":"+pad(secs)+" ");
 };
 
 // Tab title
